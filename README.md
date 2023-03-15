@@ -2,4 +2,4 @@
 
 ## Example usage
 
-uses: nearsure/github_actions@v1
+uses: Nearsure/github_actions@v1
