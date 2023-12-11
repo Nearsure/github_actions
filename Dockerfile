@@ -7,4 +7,5 @@ RUN curl --silent --location http://deb.nodesource.com/setup_16.x | bash
 RUN apt-get update --fix-missing
 RUN apt-get install --yes nodejs
 RUN apt-get install --yes build-essential
+RUN apt-get install --yes ghostscript
 RUN npm install --no-audit -g serverless
