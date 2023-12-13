@@ -8,4 +8,8 @@ RUN apt-get update --fix-missing
 RUN apt-get install --yes nodejs
 RUN apt-get install --yes build-essential
 RUN apt-get install --yes ghostscript
+RUN apt-get update && \
+    apt-get -qy full-upgrade && \
+    apt-get install -qy curl && \
+    curl -sSL https://get.docker.com/ | sh
 RUN npm install --no-audit -g serverless
