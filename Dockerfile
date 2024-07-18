@@ -7,3 +7,5 @@ RUN curl --silent --location https://deb.nodesource.com/setup_18.x | bash
 RUN apt-get install --yes nodejs
 #RUN apt-get install --yes build-essential
 RUN npm install --no-audit -g serverless@4.1.12
+ENTRYPOINT ["serverless"]
+
