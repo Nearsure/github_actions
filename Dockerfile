@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-FROM python:3.8-slim-buster
+FROM python:3.8-slim-bullseye
 
 RUN apt-get update
 RUN apt-get install --yes curl
